@@ -14,31 +14,45 @@
 	"green".
 	12.Remove the div with a class of footer.
 */
-/*
+
+                                 
 //#1
 let container = document.getElementById("container");
+
 //#2. 
 let containerQuerySelector = document.querySelector("#container");
+
 //#3.
 let secondLi = document.getElementsByClassName("second");
-//#4.*/
-let thirdLi = document.getElementByTagName
-//#5.*/
+
+//#4.
+let thirdLi = document.querySelector("ol.third");
+
+//#5.
+containerQuerySelector.innerText = "Hello!";
 
 //#6.*/
+let footer = document.querySelector(".footer");
+footer.classList.add("main");
 
 //#7.*/
+footer.classList.remove("main");
 
 //#8.*/
-let newListItem = document.
+let list = document.creteElement("li");
+ 
 //#9.*/
+list.innerHTML = "four";
 
 //#10.*/
+unordered = document.querySelector("ul");
+unordered.AppendChild("list");
 
 //#11.*/
+document.querySelectorAll("ol li").style.backgroundColor = "green";
 
 //#12.*/
-
+footer.removeElement("footer");
 /*
 EVENTS
 
@@ -55,9 +69,9 @@ color of purple.
 6. Append your new div to the page to the section tag.
 */
 //#1. 
-window.addEventListener(DOMContentLoaded, ()=>{
+document.addEventListener("DOMContentLoaded", ()=>{
 	a = document.getElementById("change_heading");
-	a.innerHTML("Hello World")
+	a.innerHTML = "Hello World";
 })
 //#2. 
 
